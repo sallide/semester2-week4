@@ -12,12 +12,6 @@ int main( int argc, char **argv ) {
 
     // define appropriate data to hold your answer 
     
-
-
-    if (argc < 2) {
-    printf("./makeString buffer\n");
-    return 1;
-}
     size_t len = 0;
 
     for (int i = 1; i < argc; i++) {
@@ -33,12 +27,7 @@ int main( int argc, char **argv ) {
     //size_t len = strlen(input);
 
     char *buffer = malloc(len + 1);
-
-    if (buffer == NULL) {
-        printf("End\n");
-        return 1;
-    }
-
+    
     buffer[0] = '\0';
 
     for (int i = 1; i < argc; i++) {
