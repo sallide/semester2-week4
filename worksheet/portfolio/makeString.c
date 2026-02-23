@@ -23,8 +23,6 @@ int main( int argc, char **argv ) {
 
     char *input = argv[1];
     
-
-
     // process the command-line data using appropriate string functions
 
     size_t len = strlen(input);
@@ -32,7 +30,7 @@ int main( int argc, char **argv ) {
     char *buffer = malloc(len + 1);
 
     if (buffer == NULL) {
-        printf("Memory allocation failed\n");
+        printf("End\n");
         return 1;
     }
 
